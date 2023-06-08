@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            list-style-type: none;
+            width: 100%;
+            position: relative;
+            background-color: #f2f2f2;
+        }
+        
+        header ul li {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            border: #37180a;
+        }
+        
+        header ul li a {
+            display: inline-block;
+            padding: 10px 85px 10px 85px;
+            text-decoration: none;
+            color: #37180a;
+            font-size: 25px;
+            font-family: sans-serif;
+            font-style: normal;
+        }
+        
+        header ul li a:hover {
+            background-color: rgb(74, 87, 229);
+            padding: 10px 85px;
+        }
+        
+        .second {
+            position: relative;
+            background: #f2f2f2;
+        }
+        
+        .logo-title {
+            position: absolute;
+            left: 130px;
+            top: 0px;
+            margin-top: 50px;
+            color: rgb(53, 53, 111);
+            margin-left: 400px;
+            font-size: 55px;
+            font-weight: normal;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .f {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 35%;
+            padding-right: 30%;
+            position: relative;
+            background-color: rgb(40, 17, 133);
+            width: 100%;
+        }
+        
+        #from {
+            display: flexbox;
+            color: #120f0e;
+            background-color: #ffffff;
+            border: none;
+            height: 28px;
+            width: 150px;
+            font-size: 20px;
+            padding: 10px 25px 10px 25px;
+        }
+        
+        #from:hover {
+            background-color: #f7f2f2;
+        }
+        
+        #to {
+            display: flexbox;
+            color: #120f0e;
+            background-color: #ffffff;
+            border: none;
+            height: 28px;
+            width: 150px;
+            font-size: 20px;
+            padding: 10px 25px 10px 25px;
+        }
+        
+        #to:hover {
+            background-color: #f7f2f2;
+        }
+        
+        #search {
+            background-color: rgb(95, 107, 243);
+            position: absolute;
+            border: none;
+            height: 47.9px;
+            width: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #search:hover {
+            background-color: rgb(74, 87, 229);
+        }
+        
+        .features {
+            padding: 100px 10;
+            text-align: center;
+            background-color: #fff;
+        }
+        
+        .feature {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        #head {
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #3f3d3d;
+            color: #fff;
+            padding: 2px;
+            width: 100%;
+        }
+        
+        .para {
+            text-align: center;
+        }
+        
+        footer div li {
+            list-style-type: none;
+            padding: 2px;
+        }
+        
+        footer div a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        footer div a:hover {
+            color: rgb(74, 87, 229)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">PNR Enquiry</a></li>
+            <li><a href="#">Train Schedule</a></li>
+            <li><a href="#">Login
+            </a></li>
+        </ul>
+
+    </header>
+    <br><br><br>
+    <div class="second">
+        <div class="logo">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ZaC45eUBCxlSiQdztubbxwHaCS&pid=Api&P=0&h=180" alt="logo">
+
+            <h1 class="logo-title">RAILWAYS PASSENGER RESERVATION </h1>
+        </div>
+    </div>
+    <br>
+
+    <div class="f">
+        <form action="" method="get">
+            <input type="text" name="from" id="from" placeholder="from">
+            <img id="im" src="	https://images.railyatri.in/ry_images_prod/exchange-stn-1573209933.png
+           " alt="interchange">
+            <input type="text" name="to" id="to" placeholder="to">
+            <button type="submit" id="search"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg> </button>
+
+        </form>
+    </div>
+    <br><br><br>
+    <div>
+        <h2 id="head">WHY ONLINE BOOKING ?</h2>
+    </div>
+
+    <section class="features">
+        <div class="feature">
+            <img src="rail.png" alt="img">
+        </div>
+        <div class="feature">
+
+            <img src="book.png" alt="img">
+        </div>
+        <div class="feature">
+            <img src="fast.png" alt="img">
+        </div>
+    </section>
+    <br>
+    <footer>
+        <p class="para">THANK YOU FOR VISITING ! </p>
+        <br>
+        <div>
+            <ol id="left">
+                <li><a href="#">FAQ'S</a></li>
+                <li><a href="#">Food On Train</a></li>
+                <li><a href="#">Terms And Conditions</a></li>
+                <li> <a href="#">cancelations</a></li>
+            </ol>
+        </div>
+
+    </footer>
+</body>
+
+</html>
